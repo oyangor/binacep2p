@@ -14,7 +14,7 @@ function Binancep2p() {
 
   const fetchRecordedPrices = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/backend/models/data');
+      const response = await axios.get('https://vercel.live/link/binacep2p-robert-anthonys-projects-ee623738.vercel.app?via=project-dashboard-alias-list&p=1');
       const prices = response.data;
 
       setRecordedPrices(prices);
@@ -88,7 +88,7 @@ function Binancep2p() {
       const currentTime = new Date().toLocaleTimeString();
 
       try {
-        await axios.post('http://localhost:5000/backend/models/data', {
+        await axios.post('https://vercel.live/link/binacep2p-robert-anthonys-projects-ee623738.vercel.app?via=project-dashboard-alias-list&p=1', {
           time: currentTime,
           buy: buyPrice,
           sell: sellPrice,
@@ -104,7 +104,7 @@ function Binancep2p() {
 
   const deleteRecordedPrices = async () => {
     try {
-      const response = await axios.delete('http://localhost:5000/backend/models/data');
+      const response = await axios.delete('https://vercel.live/link/binacep2p-robert-anthonys-projects-ee623738.vercel.app?via=project-dashboard-alias-list&p=1');
       console.log(response.data.message);
       setRecordedPrices([]);
       localStorage.removeItem("recordedPrices");
