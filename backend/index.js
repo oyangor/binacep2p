@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URL);
+mongoose.connect("MONGO_URL="mongodb+srv://robertanthonyworkemail:VCXeAh5YHQc7pt6X@cluster0.nz7d3.mongodb.net/"");
 
 // Verify successful connection
 mongoose.connection.on("connected", () => {
